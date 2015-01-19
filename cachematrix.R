@@ -44,7 +44,7 @@ cacheSolve <- function(x, ...) {
     inv
 }
 
-## Unit test run 
+## Unit test run by 3x3 mtrix
 ## > x = rbind(c(1, -1/4, 0), c(-1/4, 0, 1), c(0, 2, 1))
 ## > m = makeCacheMatrix(x)
 ## > m$get()
