@@ -43,13 +43,21 @@ cacheSolve <- function(x, ...) {
     x$setinverse(inv)
     inv
 }
+## Unit test run by 2x2 matrix
+## > x = rbind(c(1, 2), c(-1, 3))
+## > m = makeCacheMatrix(x)
+## > m$get()
 
+##      [,1] [,2]
+[1,]    1    2
+[2,]   -1    3
+## > cacheSolve(m)
 ## Unit test run by 3x3 mtrix
 ## > x = rbind(c(1, -1/4, 0), c(-1/4, 0, 1), c(0, 2, 1))
 ## > m = makeCacheMatrix(x)
 ## > m$get()
 
-##       [,1]  [,2] [,3]
+## [,1]  [,2] [,3]
 ## [1,]  1.00 -0.25    0
 ## [2,] -0.25  0.00    1
 ## [3,]  0.00  2.00    1
